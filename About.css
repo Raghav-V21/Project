@@ -1,0 +1,63 @@
+@font-face{
+    font-family: 'NeusHaas';
+    src: url(fonts/NeueHaasDisplay-Light.ttf);
+    font-family: 'Canela';
+    src: url(fonts/canela_Bold.otf);
+}
+body{
+    margin-top: 6rem;
+    color: white;
+    font-size: 25px;
+    font-family: NeusHaas;
+    background-image: url("Background/Black.jpg");
+    background-size: 200% 200%;
+    position: relative;
+    text-align: center;
+}
+.greet{
+font-family: canela;
+color: white;
+font-size: 70px;    
+padding: 4px 5px;
+}
+.accordion-item{
+    background-color: rgb(241, 219, 219);
+    padding: 2px 5px;
+    margin-bottom: 1rem;
+    height: auto;
+}
+.expand{
+    margin: 0.5rem;
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    transition: max-height 650ms;
+    background-color: grey;
+    padding-bottom: 3px;
+    line-height: 2.5rem;
+}    
+.expand::before{
+    position: absolute;
+    height: 50rem;
+}
+.accordion-item:target .expand{
+    max-height: 20rem;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+th{
+    background-color: rgb(75, 72, 72);
+    font-weight: bolder;
+    font-size: 35px;
+    padding: 1px 5px;
+}
+table{
+    border-collapse: collapse;
+    width: 600px;
+    text-align: center;
+}
+tr{
+    border-bottom: 1px solid  rgb(75, 72, 72);
+}
