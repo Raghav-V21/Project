@@ -53,10 +53,6 @@ font-size: 70px;
     background-color: grey;
     padding-bottom: 3px;
     line-height: 2.5rem;
-}    
-.expand::before{
-    position: absolute;
-    height: 50rem;
 }
 .accordion-item:target .expand{
     max-height: 20rem;
@@ -80,4 +76,15 @@ table{
 }
 tr{
     border-bottom: 1px solid  rgb(75, 72, 72);
+}
+.expand p{
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+}
+.footer img{
+    width: 60px;
+    height: 60px;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
 }
